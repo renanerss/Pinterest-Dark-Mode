@@ -111,3 +111,20 @@ test('manifest: todo match estático é host do Pinterest e não há "<all_urls>
   assert.deepEqual(m.optional_host_permissions, ['<all_urls>']);
   assert.equal(m.host_permissions, undefined);
 });
+
+// ---- subdomínios do Pinterest que não são o app ----
+test('siteKind: www.pinterest.com, br.pinterest.com, pinterest.co.uk, uk.pinterest.com => "pinterest"', () => {
+  for (const h of ['www.pinterest.com', 'br.pinterest.com', 'pinterest.co.uk', 'uk.pinterest.com']) {
+    assert.equal(S.siteKind(h), 'pinterest', h);
+  }
+});
+test('siteKind: cada host de NON_APP_SUBDOMAINS (business, developers, help, newsroom, policy) => "other"', () => {
+  assert.deepEqual([...S.NON_APP_SUBDOMAINS].sort(), ['business', 'developers', 'help', 'newsroom', 'policy']);
+  for (const sub of S.NON_APP_SUBDOMAINS) assert.equal(S.siteKind(`${sub}.pinterest.com`), 'other', sub);
+});
+test('siteKind: example.com => "other"', () => {
+  assert.equal(S.siteKind('example.com'), 'other');
+});
+test('effectiveTheme: help.pinterest.com com otherSites:false continua devolvendo o tema (domínio Pinterest)', () => {
+  assert.equal(S.effectiveTheme({ theme: 'sepia', otherSites: false }, 'help.pinterest.com'), 'sepia');
+});

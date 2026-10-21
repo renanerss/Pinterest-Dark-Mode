@@ -17,3 +17,13 @@ As variáveis cobrem as superfícies verificadas (cabeçalho, grade de pins, mod
 - Automática (`PT_LIVE=1 npm run test:e2e -- pinterest-live`): `data-pt-site`, fundo computado e pixel da superfície do modal nos temas Escuro (`#2b2d2f`) e Sépia (`#f4ecd8`) — passou.
 - Visual (Chromium com a extensão, página de busca deslogada, modal de login): ambos os temas legíveis, imagens com as cores originais, botão vermelho de marca preservado.
 - **Não verificado:** feed logado, pin aberto, boards, perfil, vídeo-pin e modal de salvar (exigem login). Se alguma superfície ficar branca/ilegível, localizar a variável `--sema-color-*` responsável e mapeá-la em `css/pinterest.css`.
+
+## Subdomínios (2026-10-20)
+
+| Host | `--sema-color-background-default` | Pinta a página com ela? | Tratamento |
+|---|---|---|---|
+| `www.`/regionais (`br.`, `uk.`…) | `#fff` | sim | camada do Pinterest |
+| `help.`, `policy.` | ausente | não | motor genérico (`NON_APP_SUBDOMAINS`) |
+| `business.`, `developers.`, `newsroom.` | `#fff` | **não** (página branca mesmo com a variável) | motor genérico (`NON_APP_SUBDOMAINS`) |
+
+A presença da variável não prova que a página a usa; o critério é visual. Não verificados (seguem na camada do Pinterest): `about.`, `ads.`, `create.`, `analytics.`, `investor.` e demais subdomínios.

@@ -2,6 +2,8 @@
   const THEME_IDS = ['light', 'dark', 'sepia'];
   const DEFAULTS = { theme: 'dark', otherSites: false };
   const PINTEREST_RE = /(^|\.)pinterest\.([a-z]{2,3}|(com|co)\.[a-z]{2})$/;
+  // Subdomínios do Pinterest que não usam o design system do app (não pintam a página com --sema-color-*): usam o motor genérico.
+  const NON_APP_SUBDOMAINS = ['business', 'developers', 'help', 'newsroom', 'policy'];
   const ALL_SITES = { origins: ['<all_urls>'] };
 
   function normalizeSettings(raw) {
@@ -14,6 +16,12 @@
 
   function isPinterestHost(hostname) {
     return PINTEREST_RE.test(String(hostname).toLowerCase());
+  }
+
+  function siteKind(hostname) {
+    const host = String(hostname).toLowerCase();
+    if (!isPinterestHost(host)) return 'other';
+    return NON_APP_SUBDOMAINS.includes(host.split('.')[0]) ? 'other' : 'pinterest';
   }
 
   function effectiveTheme(settings, hostname) {
@@ -55,7 +63,7 @@
     return false;
   }
 
-  const api = { THEME_IDS, DEFAULTS, normalizeSettings, isPinterestHost, effectiveTheme, reconcileOtherSites, load, save, setOtherSites };
+  const api = { THEME_IDS, DEFAULTS, normalizeSettings, isPinterestHost, NON_APP_SUBDOMAINS, siteKind, effectiveTheme, reconcileOtherSites, load, save, setOtherSites };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.PTSettings = api;
 })(globalThis);

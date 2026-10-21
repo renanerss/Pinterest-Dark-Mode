@@ -1,5 +1,5 @@
 (function () {
-  const { load, effectiveTheme, isPinterestHost, THEME_IDS } = PTSettings;
+  const { load, effectiveTheme, siteKind, THEME_IDS } = PTSettings;
   const root = document.documentElement;
   const CACHE_KEY = '__pt_theme';
 
@@ -11,7 +11,7 @@
   // Aplica de forma síncrona o último tema resolvido neste site, evitando o flash claro.
   try {
     const cached = localStorage.getItem(CACHE_KEY);
-    if (THEME_IDS.includes(cached)) setAttrs(isPinterestHost(location.hostname) ? 'pinterest' : 'other', cached);
+    if (THEME_IDS.includes(cached)) setAttrs(siteKind(location.hostname), cached);
   } catch (e) { /* storage bloqueado: segue sem cache */ }
 
   async function apply() {
@@ -19,7 +19,7 @@
       const settings = await load();
       const host = location.hostname;
       const theme = effectiveTheme(settings, host);
-      setAttrs(isPinterestHost(host) ? 'pinterest' : 'other', theme);
+      setAttrs(siteKind(host), theme);
       try { localStorage.setItem(CACHE_KEY, theme); } catch (e) { /* ignora */ }
     } catch (e) { /* extensão recarregada/atualizada: o contexto deste script foi invalidado */ }
   }

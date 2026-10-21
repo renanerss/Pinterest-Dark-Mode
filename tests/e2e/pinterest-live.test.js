@@ -45,3 +45,21 @@ test('trocar o tema com a aba do Pinterest já aberta atualiza sem recarregar', 
   await page.waitForFunction(() => document.documentElement.dataset.ptTheme === 'light');
   expect(await page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor)).not.toBe('rgb(244, 236, 216)');
 });
+
+async function openUrl(url, theme) {
+  await env.setSettings({ theme, otherSites: false });
+  const page = await env.context.newPage();
+  await page.goto(url, { waitUntil: 'domcontentloaded' });
+  await page.waitForFunction(() => document.documentElement.hasAttribute('data-pt-site'));
+  await page.waitForTimeout(3500);
+  if (process.env.PT_SHOTS) await page.screenshot({ path: `${process.env.PT_SHOTS}/${new URL(url).host}-${theme}.png` });
+  return page;
+}
+
+for (const sub of ['help', 'business', 'developers', 'newsroom', 'policy']) {
+  test(`${sub}.pinterest.com (fora do app) usa o motor genérico e fica cinza cimento`, async () => {
+    const page = await openUrl(`https://${sub}.pinterest.com/`, 'dark');
+    expect(await page.evaluate(() => document.documentElement.dataset.ptSite)).toBe('other');
+    near(await pixel(page, 5, sub === 'developers' ? 5 : 300), [46, 46, 46], 12); // developers tem um hero colorido próprio
+  });
+}
