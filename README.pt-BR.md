@@ -48,6 +48,10 @@ Nenhum dado é coletado, vendido ou enviado a lugar nenhum. Suas escolhas ficam 
 
 **Está na Chrome Web Store?** Ainda não. Até lá, use os passos de instalação acima.
 
+## Apoie o projeto
+
+A extensão é gratuita e independente. Se ela deixa o Pinterest mais agradável para você, pode [me pagar um café](https://buymeacoffee.com/renanerslif) ☕. É opcional e sempre bem-vindo.
+
 ## Aviso
 
 Sem vínculo, aprovação ou patrocínio do Pinterest. Pinterest é marca registrada da Pinterest, Inc.

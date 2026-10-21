@@ -48,6 +48,10 @@ No data is collected, sold or sent anywhere. Your choices are saved with `chrome
 
 **Is it on the Chrome Web Store?** Not yet. Until then, use the install steps above.
 
+## Support the project
+
+The extension is free and independent. If it makes Pinterest nicer for you, you can [buy me a coffee](https://buymeacoffee.com/renanerslif) ☕. It's optional and always appreciated.
+
 ## Disclaimer
 
 Not affiliated with, endorsed by or sponsored by Pinterest. Pinterest is a trademark of Pinterest, Inc.
