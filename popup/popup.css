@@ -1,0 +1,10 @@
+:root { color-scheme: light dark; --bg: #fff; --fg: #222; --bd: #ccc; --ac: #e60023; }
+@media (prefers-color-scheme: dark) { :root { --bg: #2b2d2f; --fg: #d9dadb; --bd: #44484c; } }
+body { width: 260px; margin: 0; padding: 14px 16px; background: var(--bg); color: var(--fg); font: 14px system-ui, sans-serif; }
+h1 { font-size: 15px; margin: 0 0 10px; }
+.themes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.themes button { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 4px; background: transparent; color: inherit; border: 2px solid var(--bd); border-radius: 10px; font: inherit; cursor: pointer; }
+.themes button[aria-pressed="true"] { border-color: var(--ac); }
+.themes button:focus-visible, .other input:focus-visible { outline: 2px solid var(--ac); outline-offset: 2px; }
+.swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--bd); }
+.other { display: flex; align-items: center; gap: 8px; margin-top: 14px; cursor: pointer; }
