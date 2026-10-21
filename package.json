@@ -9,7 +9,8 @@
     "package": "node scripts/build.js",
     "test:e2e": "node scripts/build.js --test && node scripts/build.js && playwright test tests/e2e",
     "icons": "node scripts/make-icons.js",
-    "store-assets": "node scripts/build.js --test && node scripts/store-assets.js"
+    "store-assets": "node scripts/build.js --test && node scripts/store-assets.js",
+    "release": "node scripts/build.js && node scripts/release.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
