@@ -44,3 +44,13 @@ test('desmarcar "Aplicar em outros sites" salva otherSites=false e clareia a aba
   near(await pixel(page, 400, 400), [255, 255, 255], 0);
   await popup.close();
 });
+
+test('marcar "Aplicar em outros sites" (permissão concedida) salva otherSites=true e mostra a dica', async () => {
+  await env.setSettings({ theme: 'dark', otherSites: false });
+  const popup = await env.context.newPage();
+  await popup.goto(popupUrl());
+  await popup.locator('#other-sites').check();
+  await expect(popup.locator('#status')).not.toBeEmpty();
+  await expect.poll(() => popup.evaluate(() => chrome.storage.sync.get('otherSites'))).toEqual({ otherSites: true });
+  await popup.close();
+});

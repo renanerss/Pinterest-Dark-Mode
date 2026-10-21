@@ -9,7 +9,8 @@ async function open(settings) {
   await env.setSettings(settings);
   const page = await env.context.newPage();
   await page.goto(env.baseUrl);
-  await page.waitForFunction(() => document.documentElement.hasAttribute('data-pt-theme'));
+  // com otherSites desligado o script nem é injetado em sites que não são do Pinterest
+  if (settings.otherSites === true) await page.waitForFunction(() => document.documentElement.hasAttribute('data-pt-theme'));
   await page.waitForTimeout(150);
   return page;
 }
@@ -73,7 +74,7 @@ test('atributo data-pt-theme presente em DOMContentLoaded', async () => {
 });
 
 test('valor corrompido no storage cai no padrão (dark)', async () => {
-  const page = await open({ theme: 'neon', otherSites: 'sim' });
+  const page = await open({ theme: 'neon', otherSites: true });
   expect(await page.evaluate(() => document.documentElement.dataset.ptTheme)).toBe('dark');
 });
 
@@ -81,7 +82,7 @@ async function openPath(path, settings) {
   await env.setSettings(settings);
   const page = await env.context.newPage();
   await page.goto(env.baseUrl + path);
-  await page.waitForFunction(() => document.documentElement.hasAttribute('data-pt-theme'));
+  if (settings.otherSites === true) await page.waitForFunction(() => document.documentElement.hasAttribute('data-pt-theme'));
   await page.waitForTimeout(150);
   return page;
 }
@@ -103,4 +104,15 @@ test('dark: imagem comum mantém o matiz', async () => {
   const b = await page.locator('#red').boundingBox();
   const [r, g, bl] = await pixel(page, b.x + 10, b.y + 10);
   expect(r).toBeGreaterThan(120); expect(r - g).toBeGreaterThan(40); expect(r - bl).toBeGreaterThan(40); // matiz vermelho preservado (saturação cai um pouco)
+});
+
+test('otherSites=true: script dinâmico registrado e fixture temada após navegar', async () => {
+  const page = await open({ theme: 'sepia', otherSites: true });
+  expect(await page.evaluate(() => document.documentElement.dataset.ptTheme)).toBe('sepia');
+  expect(await page.evaluate(() => document.documentElement.dataset.ptSite)).toBe('other');
+});
+
+test('otherSites=false: nova página não recebe data-pt-theme', async () => {
+  const page = await open({ theme: 'dark', otherSites: false });
+  expect(await page.evaluate(() => document.documentElement.hasAttribute('data-pt-theme'))).toBe(false);
 });

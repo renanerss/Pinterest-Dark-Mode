@@ -34,8 +34,11 @@ window.PTPopup = { applyI18n };
     await PTSettings.save({ theme: b.dataset.theme });
     render(await PTSettings.load());
   }));
+  const status = document.getElementById('status');
   other.addEventListener('change', async () => {
-    await PTSettings.save({ otherSites: other.checked });
-    render(await PTSettings.load());
+    const wanted = other.checked;
+    const enabled = await PTSettings.setOtherSites(wanted);
+    other.checked = enabled;
+    status.textContent = enabled ? chrome.i18n.getMessage('otherSitesHint') : (wanted ? chrome.i18n.getMessage('permissionDenied') : '');
   });
 })();

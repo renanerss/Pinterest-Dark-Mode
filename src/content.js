@@ -15,11 +15,13 @@
   } catch (e) { /* storage bloqueado: segue sem cache */ }
 
   async function apply() {
-    const settings = await load();
-    const host = location.hostname;
-    const theme = effectiveTheme(settings, host);
-    setAttrs(isPinterestHost(host) ? 'pinterest' : 'other', theme);
-    try { localStorage.setItem(CACHE_KEY, theme); } catch (e) { /* ignora */ }
+    try {
+      const settings = await load();
+      const host = location.hostname;
+      const theme = effectiveTheme(settings, host);
+      setAttrs(isPinterestHost(host) ? 'pinterest' : 'other', theme);
+      try { localStorage.setItem(CACHE_KEY, theme); } catch (e) { /* ignora */ }
+    } catch (e) { /* extensão recarregada/atualizada: o contexto deste script foi invalidado */ }
   }
 
   apply();

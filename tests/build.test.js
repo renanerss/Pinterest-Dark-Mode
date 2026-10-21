@@ -31,10 +31,11 @@ test('store: manifest sem "key"; versão == package.json', async () => {
   assert.equal(manifest.version, pkg.version);
 });
 
-test('store: sem host_permissions; permissions == ["storage"]', async () => {
+test('store: sem host_permissions; permissions == ["storage","scripting"]', async () => {
   const { manifest } = await build({ variant: 'store', outDir: tmp() });
   assert.equal(manifest.host_permissions, undefined);
-  assert.deepEqual(manifest.permissions, ['storage']);
+  assert.deepEqual(manifest.permissions, ['storage', 'scripting']);
+  assert.deepEqual(manifest.optional_host_permissions, ['<all_urls>']);
 });
 
 test('store: todo arquivo referenciado existe no pacote', async () => {
