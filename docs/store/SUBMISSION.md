@@ -26,7 +26,7 @@ Carregue `dist/extension` em `chrome://extensions` → Modo do desenvolvedor →
 ## 2. Preparar o repositório e a política de privacidade
 
 - [ ] Fazer `git push` do projeto para `https://github.com/renanerss/Pinterest-Dark-Mode` (o `origin` já está configurado; **nenhum push foi feito**).
-- [ ] Se o repositório for público: *Settings → Pages → Deploy from a branch → `master` / `/docs`*. A política ficará em algo como `https://renanerss.github.io/Pinterest-Dark-Mode/store/privacy-policy` (confira a URL final no navegador).
+- [ ] Se o repositório for público: *Settings → Pages → Deploy from a branch → `main` / `/docs`*. A política ficará em algo como `https://renanerss.github.io/Pinterest-Dark-Mode/store/privacy-policy` (confira a URL final no navegador).
 - [ ] Repositório privado não publica Pages gratuito: hospede `docs/store/privacy-policy.md` em outro lugar público.
 
 ## 3. Painel do desenvolvedor

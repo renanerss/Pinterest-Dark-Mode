@@ -18,7 +18,7 @@ Seus pins mantêm as cores originais: os temas mudam a página, nunca as fotos.
 
 O Chrome não instala um `.zip` direto: você descompacta uma vez e carrega a pasta. Leva cerca de um minuto.
 
-1. **[Baixe o .zip](https://github.com/renanerss/Pinterest-Dark-Mode/raw/master/releases/soft-themes-for-pinterest-1.0.0.zip)**.
+1. **[Baixe o .zip](https://github.com/renanerss/Pinterest-Dark-Mode/raw/main/releases/soft-themes-for-pinterest-1.0.0.zip)**.
 2. **Descompacte** numa pasta que você vai manter (por exemplo `Documentos/soft-themes-for-pinterest`). O Chrome carrega a extensão dessa pasta, então não a apague depois. O arquivo `manifest.json` deve estar direto dentro dela.
 3. Abra `chrome://extensions` e ative o **Modo do desenvolvedor** (canto superior direito).
 4. Clique em **Carregar sem compactação** e escolha a pasta do passo 2.

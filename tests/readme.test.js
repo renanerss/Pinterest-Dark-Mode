@@ -8,7 +8,7 @@ const ROOT = path.resolve(__dirname, '..');
 const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const pkg = JSON.parse(read('package.json'));
 const ZIP = `releases/soft-themes-for-pinterest-${pkg.version}.zip`;
-const RAW = `https://github.com/renanerss/Pinterest-Dark-Mode/raw/master/${ZIP}`;
+const RAW = `https://github.com/renanerss/Pinterest-Dark-Mode/raw/main/${ZIP}`;
 
 for (const file of ['README.md', 'README.pt-BR.md']) {
   test(`${file}: link de download do zip, passos de instalação e imagens existentes`, () => {

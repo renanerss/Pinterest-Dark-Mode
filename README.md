@@ -18,7 +18,7 @@ Your pins keep their original colors: the themes change the page, never the phot
 
 Chrome can't install a `.zip` directly, so you unzip it once and load the folder. It takes about a minute.
 
-1. **[Download the .zip](https://github.com/renanerss/Pinterest-Dark-Mode/raw/master/releases/soft-themes-for-pinterest-1.0.0.zip)**.
+1. **[Download the .zip](https://github.com/renanerss/Pinterest-Dark-Mode/raw/main/releases/soft-themes-for-pinterest-1.0.0.zip)**.
 2. **Unzip** it into a folder you'll keep (for example `Documents/soft-themes-for-pinterest`). Chrome loads the extension from that folder, so don't delete it afterwards. You should see `manifest.json` directly inside it.
 3. Open `chrome://extensions` and turn on **Developer mode** (top-right).
 4. Click **Load unpacked** and select the folder from step 2.
