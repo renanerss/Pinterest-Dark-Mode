@@ -7,9 +7,10 @@ const { PNG } = require('pngjs');
 const { extensionIdFromKey } = require('../../scripts/gen-key.js');
 
 const ROOT = path.resolve(__dirname, '../..');
+const EXT_DIR = path.join(ROOT, 'dist/test'); // gerado por: node scripts/build.js --test
 
 async function launch() {
-  const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
+  const manifest = JSON.parse(fs.readFileSync(path.join(EXT_DIR, 'manifest.json'), 'utf8'));
   const extensionId = extensionIdFromKey(manifest.key);
 
   const fixtureDir = path.join(ROOT, 'tests/fixture');
@@ -29,7 +30,7 @@ async function launch() {
     channel: 'chromium',
     headless: true,
     viewport: { width: 800, height: 600 },
-    args: [`--disable-extensions-except=${ROOT}`, `--load-extension=${ROOT}`],
+    args: [`--disable-extensions-except=${EXT_DIR}`, `--load-extension=${EXT_DIR}`],
   });
 
   async function setSettings(patch) {
