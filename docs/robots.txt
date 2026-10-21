@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /superpowers/
+Disallow: /design/
+Disallow: /store/
+
+Sitemap: https://renanerss.github.io/Pinterest-Dark-Mode/sitemap.xml

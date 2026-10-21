@@ -1,10 +1,10 @@
-# Soft Themes for Pinterest
+# Modo Escuro do Pinterest — Soft Themes for Pinterest (extensão do Chrome)
 
-🇺🇸 [Read in English](README.md)
+🌐 [Site](https://renanerss.github.io/Pinterest-Dark-Mode/pt-br/) · 🇺🇸 [Read in English](README.md)
 
 ![Soft Themes for Pinterest](docs/images/promo.png)
 
-O Pinterest é claro demais. Esta extensão do Chrome dá a ele dois visuais mais confortáveis para os olhos, trocados com um clique:
+**Modo escuro do Pinterest** suave para os olhos. O Pinterest é claro demais; esta extensão gratuita do Chrome adiciona um tema escuro e um tema sépia, trocados com um clique:
 
 - **Escuro**: fundo **cinza cimento** suave (nunca preto puro), com bom contraste.
 - **Sépia**: um tom de papel quente para sessões longas.

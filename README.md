@@ -1,10 +1,10 @@
-# Soft Themes for Pinterest
+# Pinterest Dark Mode — Soft Themes for Pinterest (Chrome extension)
 
-🇧🇷 [Leia em português](README.pt-BR.md)
+🌐 [Website](https://renanerss.github.io/Pinterest-Dark-Mode/) · 🇧🇷 [Leia em português](README.pt-BR.md)
 
 ![Soft Themes for Pinterest](docs/images/promo.png)
 
-Pinterest is bright. This Chrome extension gives it two easier-on-the-eyes looks, switchable in one click:
+**Pinterest dark mode** that is easy on the eyes. Pinterest is bright; this free Chrome extension adds a soft dark theme and a sepia theme, switchable in one click:
 
 - **Dark**: a soft **cement-gray** background (never pure black) with comfortable contrast.
 - **Sepia**: a warm paper tone for long sessions.

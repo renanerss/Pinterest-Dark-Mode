@@ -6,11 +6,11 @@ Soft Themes for Pinterest
 
 ## Short description
 
-Temas escuro suave (cinza cimento) e sépia para o Pinterest, opcionais em outros sites. Sem vínculo com o Pinterest.
+Modo escuro suave (cinza cimento) e tema sépia para o Pinterest, opcional em outros sites. Sem vínculo com o Pinterest.
 
 ## Description
 
-O Pinterest é claro demais. Esta extensão dá a ele dois visuais mais confortáveis para os olhos, trocados com um clique na barra do navegador:
+O Pinterest é claro demais. Esta extensão adiciona ao Pinterest um modo escuro de verdade e um tema sépia, ambos mais confortáveis para os olhos, trocados com um clique na barra do navegador:
 
 • Escuro — fundo cinza cimento suave (nunca preto puro), com bom contraste para textos e ícones.
 • Sépia — um tom de papel quente para sessões longas.

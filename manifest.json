@@ -3,6 +3,7 @@
   "name": "__MSG_extName__",
   "version": "1.0.0",
   "description": "__MSG_extDescription__",
+  "homepage_url": "https://renanerss.github.io/Pinterest-Dark-Mode/",
   "default_locale": "en",
   "minimum_chrome_version": "111",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl1yHMPLU5D0OvJuYhAe60z2JDfQAcxQQi2Jn5Y/AUgqvJcTaqsskwuw/bOrv0gGHomUT2OGwI+2wWS15HgqgGBIbG3NsOM9ZyRTpPK2gBXnADwuthiRJzYMN7qfKBcvjoSjuaZzeL3Zwvs5sjrn6rOzJsEJJomFR6UG/FLlO2Ee1CEPYPi9lCXXHDPd9qQbWE1uR/wj/0tQJOdSo5r6okxpHqtY0dHuOExP+3kHAIQ620PJ4N5AQtjxC1Aq/iurl5QIL7g+eAG567EfAKSihLIcp0GIQK4d2d33Iuj3k87VlIGE9uzGfP+BEhCe4uGgPWvsdUHsI1pGB5Hl854SKkwIDAQAB",

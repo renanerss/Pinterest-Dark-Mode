@@ -1,0 +1,36 @@
+/* Estilo das páginas públicas (design system Cohere, docs/design/DESIGN-cohere.md): canvas branco, tinta #212121,
+   CTA pílula near-black, banda verde #003c33, bordas #d9d9dd, raios 8/22px, sem sombras, sem JS e sem fontes externas. */
+:root { --canvas: #fff; --ink: #212121; --primary: #17171c; --green: #003c33; --stone: #eeece7; --hairline: #d9d9dd; --muted: #616161; --focus: #4c6ee6; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--canvas); color: var(--ink); font: 400 16px/1.5 Inter, Arial, ui-sans-serif, system-ui, sans-serif; }
+a { color: inherit; text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+.mono { font: 400 14px/1.4 ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; letter-spacing: .28px; text-transform: uppercase; color: var(--muted); }
+header.top { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; font-size: 14px; }
+header.top nav { display: flex; gap: 20px; }
+.hero { padding: 56px 0 72px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+h1 { margin: 12px 0 20px; font-size: clamp(40px, 6vw, 72px); line-height: 1; letter-spacing: -.02em; font-weight: 400; }
+h2 { margin: 0 0 24px; font-size: clamp(28px, 4vw, 48px); line-height: 1.2; letter-spacing: -.01em; font-weight: 400; }
+h3 { margin: 0 0 8px; font-size: 24px; line-height: 1.3; font-weight: 400; }
+.lede { font-size: 18px; line-height: 1.4; color: var(--muted); max-width: 520px; }
+.cta { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 28px; }
+.btn { display: inline-block; padding: 12px 24px; border-radius: 32px; background: var(--primary); color: #fff; font: 500 14px/1.71 inherit; text-decoration: none; }
+.btn:hover { background: #000; }
+.link { font-size: 16px; }
+.shot { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--hairline); background: var(--stone); }
+section { padding: 72px 0; }
+.themes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: var(--stone); border-radius: 8px; padding: 32px; }
+.swatch { display: block; width: 48px; height: 48px; border-radius: 9999px; border: 1px solid var(--hairline); margin-bottom: 20px; }
+.card p { margin: 0; color: var(--muted); }
+.band { background: var(--green); color: #fff; border-radius: 22px; padding: 56px; }
+.band p { color: #edfce9; max-width: 640px; font-size: 18px; line-height: 1.4; margin: 0; }
+ol.steps { padding-left: 24px; max-width: 680px; } ol.steps li { margin-bottom: 12px; }
+details { border-top: 1px solid var(--hairline); padding: 20px 0; } details:last-of-type { border-bottom: 1px solid var(--hairline); }
+summary { cursor: pointer; font-size: 20px; line-height: 1.3; } details p { margin: 12px 0 0; color: var(--muted); max-width: 680px; }
+footer { border-top: 1px solid var(--hairline); padding: 32px 0 56px; font-size: 14px; color: var(--muted); }
+footer .links { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 16px; }
+code { background: var(--stone); padding: 1px 6px; border-radius: 4px; font-size: .9em; }
+@media (max-width: 800px) { header.top { flex-direction: column; align-items: flex-start; gap: 12px; } .hero { grid-template-columns: 1fr; padding-top: 24px; } .themes { grid-template-columns: 1fr; } .band { padding: 32px 24px; } }

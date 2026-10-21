@@ -6,11 +6,11 @@ Soft Themes for Pinterest
 
 ## Short description
 
-Soft dark (cement gray) and sepia themes for Pinterest, optional on other sites. Not affiliated with Pinterest.
+Dark mode (soft cement gray) and sepia themes for Pinterest, optional on other sites. Not affiliated with Pinterest.
 
 ## Description
 
-Pinterest is bright. This extension gives it two easier-on-the-eyes looks, switchable in one click from the toolbar:
+Pinterest is bright. This extension adds a real dark mode and a sepia theme to Pinterest, both easier on the eyes, switchable in one click from the toolbar:
 
 • Dark — a soft cement-gray background (not pure black), with comfortable contrast for text and icons.
 • Sepia — a warm paper tone for long browsing sessions.
