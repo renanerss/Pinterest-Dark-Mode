@@ -1,6 +1,6 @@
 const RTL_LOCALES = ['ar', 'fa', 'he'];
 
-// Aplica textos, direção e idioma. `getMessage(key)` devolve a string traduzida ('' se não houver).
+// Applies texts, direction and language. getMessage(key) returns the translated string ('' if missing).
 function applyI18n(getMessage, uiLanguage) {
   const lang = String(uiLanguage || 'en');
   const html = document.documentElement;

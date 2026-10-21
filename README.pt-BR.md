@@ -28,6 +28,18 @@ Abas do Pinterest que já estavam abertas precisam de um F5 na primeira vez.
 
 **Atualizar:** baixe o novo `.zip`, descompacte por cima da mesma pasta e clique no ícone de recarregar no cartão da extensão em `chrome://extensions`.
 
+### O Windows Defender diz que o .zip é uma ameaça?
+
+Algumas versões do Windows Defender sinalizaram este download como `Trojan:Script/Ulthar.A!ml`. O sufixo `!ml` indica um *palpite* de aprendizado de máquina, não uma assinatura de malware conhecido, e aqui é um **falso positivo**: a extensão não faz requisições de rede, não tem código ofuscado e todo o código-fonte está neste repositório. O .zip atual passou limpo no Defender do PC do mantenedor, mas as heurísticas mudam com o tempo.
+
+Você mesmo pode conferir:
+
+- **Compare o hash.** No PowerShell: `Get-FileHash .soft-themes-for-pinterest-1.0.0.zip -Algorithm SHA256`. Ele deve ser igual ao de [releases/SHA256.txt](releases/SHA256.txt) (`92c555783a4a8732f487c1bca529ce2beb621528832f81696e2de52b96ac97bb`).
+- **Leia o código.** É pequeno, JavaScript e CSS simples, e pode ser navegado aqui mesmo no GitHub.
+- **Reporte o falso positivo** à Microsoft para a detecção ser corrigida: https://www.microsoft.com/en-us/wdsi/filesubmission
+
+Se o hash não bater, não instale e [abra uma issue](https://github.com/renanerss/Pinterest-Dark-Mode/issues).
+
 Funciona no Chrome e em navegadores baseados em Chromium (confirmado no Brave; Edge e outros devem funcionar do mesmo jeito, usando `edge://extensions`).
 
 ## Como usar
