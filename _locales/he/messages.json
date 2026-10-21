@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "ערכות נושא כהות עדינות (אפור בטון) וספיה עבור Pinterest, באופן אופציונלי גם באתרים אחרים. אין קשר ל-Pinterest."
+  },
+  "popupTitle": {
+    "message": "ערכת נושא"
+  },
+  "themeLight": {
+    "message": "בהיר"
+  },
+  "themeDark": {
+    "message": "כהה"
+  },
+  "themeSepia": {
+    "message": "ספיה"
+  },
+  "otherSites": {
+    "message": "החל על אתרים אחרים"
+  },
+  "otherSitesHint": {
+    "message": "טען מחדש את הלשוניות הפתוחות כדי לראות את השינוי."
+  },
+  "permissionDenied": {
+    "message": "ההרשאה נדחתה. האפשרות נשארת כבויה."
+  }
+}

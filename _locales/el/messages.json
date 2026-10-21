@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Απαλά σκούρα (τσιμεντί γκρι) και σέπια θέματα για το Pinterest, προαιρετικά και σε άλλους ιστότοπους. Δεν συνδέεται με το Pinterest."
+  },
+  "popupTitle": {
+    "message": "Θέμα"
+  },
+  "themeLight": {
+    "message": "Φωτεινό"
+  },
+  "themeDark": {
+    "message": "Σκούρο"
+  },
+  "themeSepia": {
+    "message": "Σέπια"
+  },
+  "otherSites": {
+    "message": "Εφαρμογή και σε άλλους ιστότοπους"
+  },
+  "otherSitesHint": {
+    "message": "Επαναφορτώστε τις ανοιχτές καρτέλες για να δείτε την αλλαγή."
+  },
+  "permissionDenied": {
+    "message": "Η άδεια απορρίφθηκε. Η επιλογή παραμένει ανενεργή."
+  }
+}

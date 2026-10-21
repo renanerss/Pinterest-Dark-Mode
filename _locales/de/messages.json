@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Sanfte dunkle (zementgraue) und Sepia-Designs für Pinterest, optional auch für andere Websites. Nicht mit Pinterest verbunden."
+  },
+  "popupTitle": {
+    "message": "Design"
+  },
+  "themeLight": {
+    "message": "Hell"
+  },
+  "themeDark": {
+    "message": "Dunkel"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Auf anderen Websites anwenden"
+  },
+  "otherSitesHint": {
+    "message": "Lade geöffnete Tabs neu, um die Änderung zu sehen."
+  },
+  "permissionDenied": {
+    "message": "Berechtigung verweigert. Die Option bleibt aus."
+  }
+}

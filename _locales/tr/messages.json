@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest için yumuşak koyu (çimento grisi) ve sepya temaları, isteğe bağlı olarak diğer sitelerde. Pinterest ile ilgisi yok."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Açık"
+  },
+  "themeDark": {
+    "message": "Koyu"
+  },
+  "themeSepia": {
+    "message": "Sepya"
+  },
+  "otherSites": {
+    "message": "Diğer sitelere uygula"
+  },
+  "otherSitesHint": {
+    "message": "Değişikliği görmek için açık sekmeleri yeniden yükleyin."
+  },
+  "permissionDenied": {
+    "message": "İzin reddedildi. Seçenek kapalı kalır."
+  }
+}

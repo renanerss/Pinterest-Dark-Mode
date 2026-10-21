@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "ธีมมืดนุ่มนวล (เทาซีเมนต์) และซีเปียสำหรับ Pinterest ใช้กับเว็บไซต์อื่นได้ตามต้องการ ไม่เกี่ยวข้องกับ Pinterest"
+  },
+  "popupTitle": {
+    "message": "ธีม"
+  },
+  "themeLight": {
+    "message": "สว่าง"
+  },
+  "themeDark": {
+    "message": "มืด"
+  },
+  "themeSepia": {
+    "message": "ซีเปีย"
+  },
+  "otherSites": {
+    "message": "ใช้กับเว็บไซต์อื่น"
+  },
+  "otherSitesHint": {
+    "message": "โหลดแท็บที่เปิดอยู่ใหม่เพื่อดูการเปลี่ยนแปลง"
+  },
+  "permissionDenied": {
+    "message": "ปฏิเสธสิทธิ์แล้ว ตัวเลือกจะยังคงปิดอยู่"
+  }
+}

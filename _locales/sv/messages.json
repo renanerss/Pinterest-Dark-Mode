@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Mjuka mörka (cementgrå) och sepiateman för Pinterest, valfritt på andra webbplatser. Inte kopplad till Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Ljust"
+  },
+  "themeDark": {
+    "message": "Mörkt"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Använd på andra webbplatser"
+  },
+  "otherSitesHint": {
+    "message": "Läs in öppna flikar på nytt för att se ändringen."
+  },
+  "permissionDenied": {
+    "message": "Behörighet nekad. Alternativet förblir avstängt."
+  }
+}

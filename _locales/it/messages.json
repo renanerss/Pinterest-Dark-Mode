@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Temi scuro morbido (grigio cemento) e seppia per Pinterest, facoltativi su altri siti. Non affiliato a Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Chiaro"
+  },
+  "themeDark": {
+    "message": "Scuro"
+  },
+  "themeSepia": {
+    "message": "Seppia"
+  },
+  "otherSites": {
+    "message": "Applica ad altri siti"
+  },
+  "otherSitesHint": {
+    "message": "Ricarica le schede aperte per vedere la modifica."
+  },
+  "permissionDenied": {
+    "message": "Autorizzazione negata. L'opzione resta disattivata."
+  }
+}

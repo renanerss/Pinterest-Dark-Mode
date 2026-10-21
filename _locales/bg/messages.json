@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Меки тъмни (циментово сиво) и сепия теми за Pinterest, по избор и за други сайтове. Не е свързано с Pinterest."
+  },
+  "popupTitle": {
+    "message": "Тема"
+  },
+  "themeLight": {
+    "message": "Светла"
+  },
+  "themeDark": {
+    "message": "Тъмна"
+  },
+  "themeSepia": {
+    "message": "Сепия"
+  },
+  "otherSites": {
+    "message": "Прилагане и към други сайтове"
+  },
+  "otherSitesHint": {
+    "message": "Презаредете отворените раздели, за да видите промяната."
+  },
+  "permissionDenied": {
+    "message": "Разрешението е отказано. Опцията остава изключена."
+  }
+}

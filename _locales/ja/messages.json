@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest 向けのやわらかなダーク（セメントグレー）とセピアのテーマ。他のサイトでも任意で利用可能。Pinterest とは無関係です。"
+  },
+  "popupTitle": {
+    "message": "テーマ"
+  },
+  "themeLight": {
+    "message": "ライト"
+  },
+  "themeDark": {
+    "message": "ダーク"
+  },
+  "themeSepia": {
+    "message": "セピア"
+  },
+  "otherSites": {
+    "message": "他のサイトにも適用"
+  },
+  "otherSitesHint": {
+    "message": "変更を反映するには、開いているタブを再読み込みしてください。"
+  },
+  "permissionDenied": {
+    "message": "権限が拒否されました。オプションはオフのままです。"
+  }
+}

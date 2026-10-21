@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest-க்கான மென்மையான டார்க் (சிமெண்ட் சாம்பல்) மற்றும் செபியா தீம்கள், பிற தளங்களிலும் விருப்பமாக. Pinterest உடன் தொடர்பில்லை."
+  },
+  "popupTitle": {
+    "message": "தீம்"
+  },
+  "themeLight": {
+    "message": "லைட்"
+  },
+  "themeDark": {
+    "message": "டார்க்"
+  },
+  "themeSepia": {
+    "message": "செபியா"
+  },
+  "otherSites": {
+    "message": "பிற தளங்களில் பயன்படுத்து"
+  },
+  "otherSitesHint": {
+    "message": "மாற்றத்தைக் காண திறந்த தாவல்களை மீண்டும் ஏற்றவும்."
+  },
+  "permissionDenied": {
+    "message": "அனுமதி மறுக்கப்பட்டது. விருப்பம் அணைந்தே இருக்கும்."
+  }
+}

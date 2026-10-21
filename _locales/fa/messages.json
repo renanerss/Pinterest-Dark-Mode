@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "پوسته‌های تیره ملایم (خاکستری سیمانی) و سپیا برای Pinterest، به‌صورت اختیاری برای سایت‌های دیگر. وابسته به Pinterest نیست."
+  },
+  "popupTitle": {
+    "message": "پوسته"
+  },
+  "themeLight": {
+    "message": "روشن"
+  },
+  "themeDark": {
+    "message": "تیره"
+  },
+  "themeSepia": {
+    "message": "سپیا"
+  },
+  "otherSites": {
+    "message": "اعمال در سایت‌های دیگر"
+  },
+  "otherSitesHint": {
+    "message": "برای دیدن تغییر، زبانه‌های باز را دوباره بارگذاری کنید."
+  },
+  "permissionDenied": {
+    "message": "اجازه رد شد. گزینه خاموش می‌ماند."
+  }
+}

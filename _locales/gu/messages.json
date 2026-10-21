@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest માટે નરમ ડાર્ક (સિમેન્ટ ગ્રે) અને સેપિયા થીમ, અન્ય સાઇટ્સ પર વૈકલ્પિક. Pinterest સાથે જોડાયેલ નથી."
+  },
+  "popupTitle": {
+    "message": "થીમ"
+  },
+  "themeLight": {
+    "message": "આછી"
+  },
+  "themeDark": {
+    "message": "ઘેરી"
+  },
+  "themeSepia": {
+    "message": "સેપિયા"
+  },
+  "otherSites": {
+    "message": "અન્ય સાઇટ્સ પર લાગુ કરો"
+  },
+  "otherSitesHint": {
+    "message": "ફેરફાર જોવા માટે ખુલ્લા ટેબ ફરી લોડ કરો."
+  },
+  "permissionDenied": {
+    "message": "પરવાનગી નકારી. વિકલ્પ બંધ રહેશે."
+  }
+}

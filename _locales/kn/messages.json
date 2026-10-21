@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest ಗಾಗಿ ಮೃದುವಾದ ಡಾರ್ಕ್ (ಸಿಮೆಂಟ್ ಬೂದು) ಮತ್ತು ಸೆಪಿಯಾ ಥೀಮ್‌ಗಳು, ಇತರ ಸೈಟ್‌ಗಳಲ್ಲಿ ಐಚ್ಛಿಕ. Pinterest ಜೊತೆ ಸಂಬಂಧವಿಲ್ಲ."
+  },
+  "popupTitle": {
+    "message": "ಥೀಮ್"
+  },
+  "themeLight": {
+    "message": "ಹಗುರ"
+  },
+  "themeDark": {
+    "message": "ಗಾಢ"
+  },
+  "themeSepia": {
+    "message": "ಸೆಪಿಯಾ"
+  },
+  "otherSites": {
+    "message": "ಇತರ ಸೈಟ್‌ಗಳಿಗೆ ಅನ್ವಯಿಸಿ"
+  },
+  "otherSitesHint": {
+    "message": "ಬದಲಾವಣೆ ನೋಡಲು ತೆರೆದ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಮರುಲೋಡ್ ಮಾಡಿ."
+  },
+  "permissionDenied": {
+    "message": "ಅನುಮತಿ ನಿರಾಕರಿಸಲಾಗಿದೆ. ಆಯ್ಕೆ ಆಫ್ ಆಗಿಯೇ ಇರುತ್ತದೆ."
+  }
+}

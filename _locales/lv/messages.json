@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Maigas tumšās (betona pelēkās) un sēpijas tēmas Pinterest, pēc izvēles arī citās vietnēs. Nav saistīts ar Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tēma"
+  },
+  "themeLight": {
+    "message": "Gaiša"
+  },
+  "themeDark": {
+    "message": "Tumša"
+  },
+  "themeSepia": {
+    "message": "Sēpija"
+  },
+  "otherSites": {
+    "message": "Lietot citās vietnēs"
+  },
+  "otherSitesHint": {
+    "message": "Pārlādējiet atvērtās cilnes, lai redzētu izmaiņas."
+  },
+  "permissionDenied": {
+    "message": "Atļauja noraidīta. Opcija paliek izslēgta."
+  }
+}

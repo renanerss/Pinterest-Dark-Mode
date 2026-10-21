@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Temes suaus fosc (gris ciment) i sèpia per a Pinterest, opcionals en altres llocs. No afiliat a Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Clar"
+  },
+  "themeDark": {
+    "message": "Fosc"
+  },
+  "themeSepia": {
+    "message": "Sèpia"
+  },
+  "otherSites": {
+    "message": "Aplica a altres llocs"
+  },
+  "otherSitesHint": {
+    "message": "Torna a carregar les pestanyes obertes per veure el canvi."
+  },
+  "permissionDenied": {
+    "message": "Permís denegat. L'opció continua desactivada."
+  }
+}

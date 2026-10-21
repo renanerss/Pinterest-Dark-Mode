@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Tema gelap lembut (abu-abu semen) dan sepia untuk Pinterest, opsional di situs lain. Tidak berafiliasi dengan Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Terang"
+  },
+  "themeDark": {
+    "message": "Gelap"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Terapkan ke situs lain"
+  },
+  "otherSitesHint": {
+    "message": "Muat ulang tab yang terbuka untuk melihat perubahan."
+  },
+  "permissionDenied": {
+    "message": "Izin ditolak. Opsi tetap nonaktif."
+  }
+}

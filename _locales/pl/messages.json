@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Łagodne ciemne (betonowoszare) i sepiowe motywy dla Pinteresta, opcjonalnie także na innych stronach. Brak powiązania z Pinterestem."
+  },
+  "popupTitle": {
+    "message": "Motyw"
+  },
+  "themeLight": {
+    "message": "Jasny"
+  },
+  "themeDark": {
+    "message": "Ciemny"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Zastosuj na innych stronach"
+  },
+  "otherSitesHint": {
+    "message": "Odśwież otwarte karty, aby zobaczyć zmianę."
+  },
+  "permissionDenied": {
+    "message": "Odmówiono uprawnienia. Opcja pozostaje wyłączona."
+  }
+}

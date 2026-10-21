@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Giao diện tối dịu (xám xi măng) và sepia cho Pinterest, tùy chọn trên các trang khác. Không liên kết với Pinterest."
+  },
+  "popupTitle": {
+    "message": "Giao diện"
+  },
+  "themeLight": {
+    "message": "Sáng"
+  },
+  "themeDark": {
+    "message": "Tối"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Áp dụng cho trang khác"
+  },
+  "otherSitesHint": {
+    "message": "Tải lại các tab đang mở để thấy thay đổi."
+  },
+  "permissionDenied": {
+    "message": "Quyền bị từ chối. Tùy chọn vẫn tắt."
+  }
+}

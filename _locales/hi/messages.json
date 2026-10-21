@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest के लिए नरम डार्क (सीमेंट ग्रे) और सेपिया थीम, अन्य साइटों पर वैकल्पिक। Pinterest से संबद्ध नहीं।"
+  },
+  "popupTitle": {
+    "message": "थीम"
+  },
+  "themeLight": {
+    "message": "लाइट"
+  },
+  "themeDark": {
+    "message": "डार्क"
+  },
+  "themeSepia": {
+    "message": "सेपिया"
+  },
+  "otherSites": {
+    "message": "अन्य साइटों पर लागू करें"
+  },
+  "otherSitesHint": {
+    "message": "बदलाव देखने के लिए खुले टैब फिर से लोड करें।"
+  },
+  "permissionDenied": {
+    "message": "अनुमति अस्वीकृत। विकल्प बंद रहेगा।"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Mandhari laini meusi (kijivu cha saruji) na sepia kwa Pinterest, hiari kwenye tovuti nyingine. Haihusiani na Pinterest."
+  },
+  "popupTitle": {
+    "message": "Mandhari"
+  },
+  "themeLight": {
+    "message": "Angavu"
+  },
+  "themeDark": {
+    "message": "Meusi"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Tumia kwenye tovuti nyingine"
+  },
+  "otherSitesHint": {
+    "message": "Pakia upya vichupo vilivyofunguliwa ili kuona mabadiliko."
+  },
+  "permissionDenied": {
+    "message": "Ruhusa imekataliwa. Chaguo linabaki limezimwa."
+  }
+}

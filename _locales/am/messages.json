@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "ለPinterest ለስላሳ ጨለማ (የሲሚንቶ ግራጫ) እና ሴፒያ ገጽታዎች፣ በሌሎች ጣቢያዎች ላይ አማራጭ። ከPinterest ጋር ግንኙነት የለውም።"
+  },
+  "popupTitle": {
+    "message": "ገጽታ"
+  },
+  "themeLight": {
+    "message": "ብሩህ"
+  },
+  "themeDark": {
+    "message": "ጨለማ"
+  },
+  "themeSepia": {
+    "message": "ሴፒያ"
+  },
+  "otherSites": {
+    "message": "በሌሎች ጣቢያዎች ላይ ተግብር"
+  },
+  "otherSitesHint": {
+    "message": "ለውጡን ለማየት የተከፈቱ ትሮችን እንደገና ይጫኑ።"
+  },
+  "permissionDenied": {
+    "message": "ፈቃድ ተከልክሏል። አማራጩ ጠፍቶ ይቆያል።"
+  }
+}

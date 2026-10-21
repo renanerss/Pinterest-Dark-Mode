@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Temas suaves oscuro (gris cemento) y sepia para Pinterest, opcionales en otros sitios. Sin afiliación con Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Claro"
+  },
+  "themeDark": {
+    "message": "Oscuro"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Aplicar en otros sitios"
+  },
+  "otherSitesHint": {
+    "message": "Vuelve a cargar las pestañas abiertas para ver el cambio."
+  },
+  "permissionDenied": {
+    "message": "Permiso denegado. La opción sigue desactivada."
+  }
+}

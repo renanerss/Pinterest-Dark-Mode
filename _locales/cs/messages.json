@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Jemné tmavé (betonově šedé) a sépiové motivy pro Pinterest, volitelně i pro jiné weby. Bez vazby na Pinterest."
+  },
+  "popupTitle": {
+    "message": "Motiv"
+  },
+  "themeLight": {
+    "message": "Světlý"
+  },
+  "themeDark": {
+    "message": "Tmavý"
+  },
+  "themeSepia": {
+    "message": "Sépiový"
+  },
+  "otherSites": {
+    "message": "Použít na jiných webech"
+  },
+  "otherSitesHint": {
+    "message": "Pro zobrazení změny znovu načtěte otevřené karty."
+  },
+  "permissionDenied": {
+    "message": "Oprávnění zamítnuto. Možnost zůstává vypnutá."
+  }
+}

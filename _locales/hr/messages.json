@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Blage tamne (betonski sive) i sepija teme za Pinterest, po želji i za druge web-stranice. Nije povezano s Pinterestom."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Svijetla"
+  },
+  "themeDark": {
+    "message": "Tamna"
+  },
+  "themeSepia": {
+    "message": "Sepija"
+  },
+  "otherSites": {
+    "message": "Primijeni na druge stranice"
+  },
+  "otherSitesHint": {
+    "message": "Ponovno učitajte otvorene kartice da biste vidjeli promjenu."
+  },
+  "permissionDenied": {
+    "message": "Dopuštenje odbijeno. Opcija ostaje isključena."
+  }
+}

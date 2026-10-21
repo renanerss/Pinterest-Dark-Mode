@@ -1,4 +1,26 @@
+const RTL_LOCALES = ['ar', 'fa', 'he'];
+
+// Aplica textos, direção e idioma. `getMessage(key)` devolve a string traduzida ('' se não houver).
+function applyI18n(getMessage, uiLanguage) {
+  const lang = String(uiLanguage || 'en');
+  const html = document.documentElement;
+  html.lang = lang;
+  html.dir = RTL_LOCALES.includes(lang.split('-')[0].toLowerCase()) ? 'rtl' : 'ltr';
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const msg = getMessage(el.dataset.i18n);
+    if (msg) el.textContent = msg;
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+    const msg = getMessage(el.dataset.i18nAria);
+    if (msg) el.setAttribute('aria-label', msg);
+  });
+}
+
+window.PTPopup = { applyI18n };
+
 (async function () {
+  applyI18n((k) => chrome.i18n.getMessage(k), chrome.i18n.getUILanguage());
+
   const buttons = [...document.querySelectorAll('button[data-theme]')];
   const other = document.getElementById('other-sites');
 

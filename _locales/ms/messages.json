@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Tema gelap lembut (kelabu simen) dan sepia untuk Pinterest, pilihan pada tapak lain. Tidak berkaitan dengan Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Cerah"
+  },
+  "themeDark": {
+    "message": "Gelap"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Guna pada tapak lain"
+  },
+  "otherSitesHint": {
+    "message": "Muat semula tab yang dibuka untuk melihat perubahan."
+  },
+  "permissionDenied": {
+    "message": "Kebenaran ditolak. Pilihan kekal dimatikan."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest-এর জন্য নরম ডার্ক (সিমেন্ট ধূসর) ও সেপিয়া থিম, অন্য সাইটেও ঐচ্ছিক। Pinterest-এর সঙ্গে সম্পর্কিত নয়।"
+  },
+  "popupTitle": {
+    "message": "থিম"
+  },
+  "themeLight": {
+    "message": "হালকা"
+  },
+  "themeDark": {
+    "message": "গাঢ়"
+  },
+  "themeSepia": {
+    "message": "সেপিয়া"
+  },
+  "otherSites": {
+    "message": "অন্য সাইটেও প্রয়োগ করুন"
+  },
+  "otherSitesHint": {
+    "message": "পরিবর্তন দেখতে খোলা ট্যাবগুলো রিলোড করুন।"
+  },
+  "permissionDenied": {
+    "message": "অনুমতি প্রত্যাখ্যাত হয়েছে। বিকল্পটি বন্ধ থাকবে।"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Zachte donkere (cementgrijze) en sepiathema's voor Pinterest, optioneel op andere sites. Niet verbonden met Pinterest."
+  },
+  "popupTitle": {
+    "message": "Thema"
+  },
+  "themeLight": {
+    "message": "Licht"
+  },
+  "themeDark": {
+    "message": "Donker"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Toepassen op andere sites"
+  },
+  "otherSitesHint": {
+    "message": "Laad geopende tabbladen opnieuw om de wijziging te zien."
+  },
+  "permissionDenied": {
+    "message": "Toestemming geweigerd. De optie blijft uit."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Myke mørke (sementgrå) og sepia-temaer for Pinterest, valgfritt på andre nettsteder. Ikke tilknyttet Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Lyst"
+  },
+  "themeDark": {
+    "message": "Mørkt"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Bruk på andre nettsteder"
+  },
+  "otherSitesHint": {
+    "message": "Last inn åpne faner på nytt for å se endringen."
+  },
+  "permissionDenied": {
+    "message": "Tillatelse avslått. Alternativet forblir av."
+  }
+}

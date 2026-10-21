@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "為 Pinterest 提供柔和深色（水泥灰）與棕褐色主題，也可選擇用於其他網站。與 Pinterest 無關聯。"
+  },
+  "popupTitle": {
+    "message": "主題"
+  },
+  "themeLight": {
+    "message": "淺色"
+  },
+  "themeDark": {
+    "message": "深色"
+  },
+  "themeSepia": {
+    "message": "棕褐色"
+  },
+  "otherSites": {
+    "message": "套用至其他網站"
+  },
+  "otherSitesHint": {
+    "message": "請重新載入已開啟的分頁以查看變更。"
+  },
+  "permissionDenied": {
+    "message": "權限遭拒，此選項仍保持關閉。"
+  }
+}

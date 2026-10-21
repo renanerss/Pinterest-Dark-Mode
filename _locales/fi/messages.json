@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pehmeät tummat (betoninharmaat) ja seepiateemat Pinterestiin, valinnaisesti myös muille sivustoille. Ei ole sidoksissa Pinterestiin."
+  },
+  "popupTitle": {
+    "message": "Teema"
+  },
+  "themeLight": {
+    "message": "Vaalea"
+  },
+  "themeDark": {
+    "message": "Tumma"
+  },
+  "themeSepia": {
+    "message": "Seepia"
+  },
+  "otherSites": {
+    "message": "Käytä muilla sivustoilla"
+  },
+  "otherSitesHint": {
+    "message": "Lataa avoimet välilehdet uudelleen nähdäksesi muutoksen."
+  },
+  "permissionDenied": {
+    "message": "Lupa evätty. Asetus pysyy pois päältä."
+  }
+}

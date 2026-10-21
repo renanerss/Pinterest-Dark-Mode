@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest కోసం మృదువైన డార్క్ (సిమెంట్ గ్రే), సెపియా థీమ్‌లు, ఇతర సైట్‌లలో ఐచ్ఛికం. Pinterestతో సంబంధం లేదు."
+  },
+  "popupTitle": {
+    "message": "థీమ్"
+  },
+  "themeLight": {
+    "message": "లైట్"
+  },
+  "themeDark": {
+    "message": "డార్క్"
+  },
+  "themeSepia": {
+    "message": "సెపియా"
+  },
+  "otherSites": {
+    "message": "ఇతర సైట్‌లలో వర్తింపజేయి"
+  },
+  "otherSitesHint": {
+    "message": "మార్పును చూడటానికి తెరిచిన ట్యాబ్‌లను మళ్లీ లోడ్ చేయండి."
+  },
+  "permissionDenied": {
+    "message": "అనుమతి నిరాకరించబడింది. ఎంపిక ఆఫ్‌లోనే ఉంటుంది."
+  }
+}

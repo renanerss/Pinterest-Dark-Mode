@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Malambot na dark (cement gray) at sepia na tema para sa Pinterest, opsyonal sa ibang site. Walang kaugnayan sa Pinterest."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Maliwanag"
+  },
+  "themeDark": {
+    "message": "Madilim"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Ilapat sa ibang site"
+  },
+  "otherSitesHint": {
+    "message": "I-reload ang mga bukas na tab para makita ang pagbabago."
+  },
+  "permissionDenied": {
+    "message": "Tinanggihan ang pahintulot. Mananatiling naka-off ang opsyon."
+  }
+}

@@ -1,18 +1,19 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Pinterest Comfort Themes</title>
+  <title>Soft Themes for Pinterest</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h1>Tema</h1>
-  <div class="themes" role="group" aria-label="Tema">
-    <button type="button" data-theme="light" aria-pressed="false"><span class="swatch" style="background:#ffffff"></span>Claro</button>
-    <button type="button" data-theme="dark" aria-pressed="false"><span class="swatch" style="background:#2e2e2e"></span>Escuro</button>
-    <button type="button" data-theme="sepia" aria-pressed="false"><span class="swatch" style="background:#f4ecd8"></span>Sépia</button>
+  <p class="label" data-i18n="popupTitle">Theme</p>
+  <div class="themes" role="group" data-i18n-aria="popupTitle">
+    <button type="button" data-theme="light" aria-pressed="false"><span class="swatch" style="background:#ffffff"></span><span data-i18n="themeLight">Light</span></button>
+    <button type="button" data-theme="dark" aria-pressed="false"><span class="swatch" style="background:#2e2e2e"></span><span data-i18n="themeDark">Dark</span></button>
+    <button type="button" data-theme="sepia" aria-pressed="false"><span class="swatch" style="background:#f4ecd8"></span><span data-i18n="themeSepia">Sepia</span></button>
   </div>
-  <label class="other"><input type="checkbox" id="other-sites"> Aplicar em outros sites</label>
+  <label class="other"><input type="checkbox" id="other-sites"> <span data-i18n="otherSites">Apply to other sites</span></label>
+  <p id="status" class="status" role="status"></p>
   <script src="../src/settings.js"></script>
   <script src="popup.js"></script>
 </body>

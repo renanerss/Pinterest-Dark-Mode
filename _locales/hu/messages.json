@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Lágy sötét (betonszürke) és szépia témák a Pinteresthez, opcionálisan más oldalakon is. Nem áll kapcsolatban a Pinteresttel."
+  },
+  "popupTitle": {
+    "message": "Téma"
+  },
+  "themeLight": {
+    "message": "Világos"
+  },
+  "themeDark": {
+    "message": "Sötét"
+  },
+  "themeSepia": {
+    "message": "Szépia"
+  },
+  "otherSites": {
+    "message": "Alkalmazás más oldalakon"
+  },
+  "otherSitesHint": {
+    "message": "Töltse újra a megnyitott lapokat a változás megtekintéséhez."
+  },
+  "permissionDenied": {
+    "message": "Az engedély megtagadva. A beállítás kikapcsolva marad."
+  }
+}

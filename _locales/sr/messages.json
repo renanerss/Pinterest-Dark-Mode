@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Нежне тамне (бетонско сиве) и сепија теме за Pinterest, опционо и на другим сајтовима. Није повезано са Pinterest-ом."
+  },
+  "popupTitle": {
+    "message": "Тема"
+  },
+  "themeLight": {
+    "message": "Светла"
+  },
+  "themeDark": {
+    "message": "Тамна"
+  },
+  "themeSepia": {
+    "message": "Сепија"
+  },
+  "otherSites": {
+    "message": "Примени на другим сајтовима"
+  },
+  "otherSitesHint": {
+    "message": "Поново учитајте отворене картице да бисте видели промену."
+  },
+  "permissionDenied": {
+    "message": "Дозвола је одбијена. Опција остаје искључена."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Teme întunecate discrete (gri ciment) și sepia pentru Pinterest, opțional și pe alte site-uri. Neafiliat cu Pinterest."
+  },
+  "popupTitle": {
+    "message": "Temă"
+  },
+  "themeLight": {
+    "message": "Luminoasă"
+  },
+  "themeDark": {
+    "message": "Întunecată"
+  },
+  "themeSepia": {
+    "message": "Sepia"
+  },
+  "otherSites": {
+    "message": "Aplică pe alte site-uri"
+  },
+  "otherSitesHint": {
+    "message": "Reîncarcă filele deschise pentru a vedea modificarea."
+  },
+  "permissionDenied": {
+    "message": "Permisiune refuzată. Opțiunea rămâne dezactivată."
+  }
+}

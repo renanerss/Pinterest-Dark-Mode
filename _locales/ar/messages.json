@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "سمات داكنة ناعمة (رمادي إسمنتي) وسيبيا لـ Pinterest، اختيارية على المواقع الأخرى. غير تابع لـ Pinterest."
+  },
+  "popupTitle": {
+    "message": "السمة"
+  },
+  "themeLight": {
+    "message": "فاتح"
+  },
+  "themeDark": {
+    "message": "داكن"
+  },
+  "themeSepia": {
+    "message": "سيبيا"
+  },
+  "otherSites": {
+    "message": "تطبيق على مواقع أخرى"
+  },
+  "otherSitesHint": {
+    "message": "أعد تحميل علامات التبويب المفتوحة لرؤية التغيير."
+  },
+  "permissionDenied": {
+    "message": "تم رفض الإذن. يبقى الخيار معطلاً."
+  }
+}

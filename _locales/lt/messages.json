@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Švelnios tamsios (betono pilkos) ir sepijos temos „Pinterest“, pasirinktinai ir kitose svetainėse. Nesusijęs su „Pinterest“."
+  },
+  "popupTitle": {
+    "message": "Tema"
+  },
+  "themeLight": {
+    "message": "Šviesi"
+  },
+  "themeDark": {
+    "message": "Tamsi"
+  },
+  "themeSepia": {
+    "message": "Sepija"
+  },
+  "otherSites": {
+    "message": "Taikyti kitose svetainėse"
+  },
+  "otherSitesHint": {
+    "message": "Iš naujo įkelkite atidarytus skirtukus, kad pamatytumėte pakeitimą."
+  },
+  "permissionDenied": {
+    "message": "Leidimas atmestas. Parinktis lieka išjungta."
+  }
+}

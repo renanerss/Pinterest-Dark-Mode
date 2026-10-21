@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pinterest-നായുള്ള മൃദുവായ ഡാർക്ക് (സിമന്റ് ഗ്രേ), സെപിയ തീമുകൾ; മറ്റ് സൈറ്റുകളിൽ ഓപ്ഷണൽ. Pinterest-മായി ബന്ധമില്ല."
+  },
+  "popupTitle": {
+    "message": "തീം"
+  },
+  "themeLight": {
+    "message": "ലൈറ്റ്"
+  },
+  "themeDark": {
+    "message": "ഡാർക്ക്"
+  },
+  "themeSepia": {
+    "message": "സെപിയ"
+  },
+  "otherSites": {
+    "message": "മറ്റ് സൈറ്റുകളിൽ പ്രയോഗിക്കുക"
+  },
+  "otherSitesHint": {
+    "message": "മാറ്റം കാണാൻ തുറന്ന ടാബുകൾ വീണ്ടും ലോഡ് ചെയ്യുക."
+  },
+  "permissionDenied": {
+    "message": "അനുമതി നിരസിച്ചു. ഓപ്ഷൻ ഓഫായി തുടരും."
+  }
+}

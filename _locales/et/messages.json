@@ -1,0 +1,29 @@
+{
+  "extName": {
+    "message": "Soft Themes for Pinterest"
+  },
+  "extDescription": {
+    "message": "Pehmed tumedad (betoonhall) ja seepia teemad Pinterestile, soovi korral ka teistele saitidele. Pinterestiga ei seostu."
+  },
+  "popupTitle": {
+    "message": "Teema"
+  },
+  "themeLight": {
+    "message": "Hele"
+  },
+  "themeDark": {
+    "message": "Tume"
+  },
+  "themeSepia": {
+    "message": "Seepia"
+  },
+  "otherSites": {
+    "message": "Rakenda ka teistel saitidel"
+  },
+  "otherSitesHint": {
+    "message": "Muudatuse nägemiseks laadi avatud vahelehed uuesti."
+  },
+  "permissionDenied": {
+    "message": "Luba keelati. Valik jääb välja lülitatuks."
+  }
+}
