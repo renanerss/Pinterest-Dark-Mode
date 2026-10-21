@@ -36,3 +36,12 @@ test('sepia: superfície do site é papel quente', async () => {
   expect(await page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor)).toBe('rgb(244, 236, 216)');
   near(await pixel(page, 400, 10), [244, 236, 216], 8);
 });
+
+test('trocar o tema com a aba do Pinterest já aberta atualiza sem recarregar', async () => {
+  const page = await open('dark');
+  await env.setSettings({ theme: 'sepia' });
+  await page.waitForFunction(() => getComputedStyle(document.documentElement).backgroundColor === 'rgb(244, 236, 216)');
+  await env.setSettings({ theme: 'light' });
+  await page.waitForFunction(() => document.documentElement.dataset.ptTheme === 'light');
+  expect(await page.evaluate(() => getComputedStyle(document.documentElement).backgroundColor)).not.toBe('rgb(244, 236, 216)');
+});

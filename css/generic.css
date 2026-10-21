@@ -1,10 +1,26 @@
 @media screen {
+  /* Escuro: inverte tudo e devolve a cor original a mídia. O fundo "preto" resultante é elevado a
+     #2e2e2e (cinza cimento) por um overlay `darken` aplicado antes da inversão (#d1d1d1 -> #2e2e2e);
+     por isso tons abaixo de #2e2e2e, inclusive nas imagens, ficam em #2e2e2e. */
   html[data-pt-theme="dark"]:not([data-pt-site="pinterest"]) {
-    filter: invert(1) hue-rotate(180deg) contrast(.64);
-  }
-  html[data-pt-theme="dark"]:not([data-pt-site="pinterest"]) :is(img, video, canvas, picture, iframe) {
     filter: invert(1) hue-rotate(180deg);
   }
+  :where(html[data-pt-theme="dark"]:not([data-pt-site="pinterest"])) {
+    background-color: #fff;
+  }
+  html[data-pt-theme="dark"]:not([data-pt-site="pinterest"]) :is(img, video, canvas, iframe) {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  html[data-pt-theme="dark"]:not([data-pt-site="pinterest"])::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #d1d1d1;
+    mix-blend-mode: darken;
+    pointer-events: none;
+    z-index: 2147483647;
+  }
+
   html[data-pt-theme="sepia"]:not([data-pt-site="pinterest"])::after {
     content: "";
     position: fixed;

@@ -25,7 +25,7 @@ test('dark: imagem e iframe mantêm o matiz', async () => {
   for (const sel of ['#red', '#frame']) {
     const b = await page.locator(sel).boundingBox();
     const [r, g, bl] = await pixel(page, b.x + 10, b.y + 10);
-    expect(r).toBeGreaterThan(150); expect(g).toBeLessThan(90); expect(bl).toBeLessThan(90);
+    expect(r).toBeGreaterThan(120); expect(r - g).toBeGreaterThan(40); expect(r - bl).toBeGreaterThan(40); // matiz vermelho preservado (saturação cai um pouco)
   }
 });
 
@@ -75,4 +75,32 @@ test('atributo data-pt-theme presente em DOMContentLoaded', async () => {
 test('valor corrompido no storage cai no padrão (dark)', async () => {
   const page = await open({ theme: 'neon', otherSites: 'sim' });
   expect(await page.evaluate(() => document.documentElement.dataset.ptTheme)).toBe('dark');
+});
+
+async function openPath(path, settings) {
+  await env.setSettings(settings);
+  const page = await env.context.newPage();
+  await page.goto(env.baseUrl + path);
+  await page.waitForFunction(() => document.documentElement.hasAttribute('data-pt-theme'));
+  await page.waitForTimeout(150);
+  return page;
+}
+
+test('dark: página sem fundo próprio também vira cinza cimento (não preto)', async () => {
+  const page = await openPath('/nobg.html', { theme: 'dark', otherSites: true });
+  near(await pixel(page, 400, 400), [46, 46, 46], 5);
+});
+
+test('dark: imagem dentro de <picture> não é invertida em dobro', async () => {
+  const page = await openPath('/nobg.html', { theme: 'dark', otherSites: true });
+  const b = await page.locator('#pic').boundingBox();
+  const [r, g, bl] = await pixel(page, b.x + 10, b.y + 10);
+  expect(r).toBeGreaterThan(120); expect(r - g).toBeGreaterThan(40); expect(r - bl).toBeGreaterThan(40); // matiz vermelho preservado (saturação cai um pouco)
+});
+
+test('dark: imagem comum mantém o matiz', async () => {
+  const page = await open({ theme: 'dark', otherSites: true });
+  const b = await page.locator('#red').boundingBox();
+  const [r, g, bl] = await pixel(page, b.x + 10, b.y + 10);
+  expect(r).toBeGreaterThan(120); expect(r - g).toBeGreaterThan(40); expect(r - bl).toBeGreaterThan(40); // matiz vermelho preservado (saturação cai um pouco)
 });

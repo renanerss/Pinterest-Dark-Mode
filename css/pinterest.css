@@ -9,6 +9,10 @@
     --pt-pressed-2: color-mix(in srgb, var(--pt-surface-2), var(--pt-mix) 11%);
 
     background-color: var(--pt-bg);
+  }
+  html[data-pt-site="pinterest"][data-pt-theme="dark"] { color-scheme: dark; }
+
+  html[data-pt-site="pinterest"]:is([data-pt-theme="dark"], [data-pt-theme="sepia"]) {
 
     /* superfícies */
     --sema-color-background-default: var(--pt-bg);
