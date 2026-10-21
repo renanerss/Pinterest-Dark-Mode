@@ -1,0 +1,17 @@
+@media screen {
+  html[data-pt-theme="dark"]:not([data-pt-site="pinterest"]) {
+    filter: invert(1) hue-rotate(180deg) contrast(.64);
+  }
+  html[data-pt-theme="dark"]:not([data-pt-site="pinterest"]) :is(img, video, canvas, picture, iframe) {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  html[data-pt-theme="sepia"]:not([data-pt-site="pinterest"])::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #f4ecd8;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 2147483647;
+  }
+}
