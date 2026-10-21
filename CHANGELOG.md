@@ -9,3 +9,5 @@ Primeira versão para a Chrome Web Store.
 - Interface em 55 idiomas (seguindo o idioma do navegador), com suporte a escrita da direita para a esquerda.
 - Popup no estilo do design system Cohere.
 - Subdomínios institucionais do Pinterest (`help.`, `policy.`, `business.`, `developers.`, `newsroom.`) usam o motor genérico.
+
+Limitações conhecidas: se o tema for trocado enquanto um site não está aberto, a visita seguinte pode mostrar o tema antigo por um instante antes de corrigir (cache por site); conteúdo em tela cheia e `<dialog>` não recebe o tema genérico.

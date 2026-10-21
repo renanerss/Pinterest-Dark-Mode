@@ -44,11 +44,17 @@ async function launch({ variant = 'test' } = {}) {
     await page.goto(`chrome-extension://${extensionId}/popup/popup.html`);
     await page.evaluate((p) => chrome.storage.sync.set(p), patch);
     // o service worker registra/remove o script dos outros sites: espera o estado estabilizar
-    await page.waitForFunction(async () => {
-      const s = await chrome.storage.sync.get(null);
-      const reg = await chrome.scripting.getRegisteredContentScripts({ ids: ['pt-other-sites'] });
-      return reg.length === (s.otherSites === true ? 1 : 0);
-    }, null, { timeout: 10000 });
+    // atenção: waitForFunction com função async nunca espera (a Promise é sempre truthy); por isso o polling é feito aqui
+    for (let i = 0; ; i++) {
+      const ok = await page.evaluate(async () => {
+        const s = await chrome.storage.sync.get(null);
+        const reg = await chrome.scripting.getRegisteredContentScripts({ ids: ['pt-other-sites'] });
+        return reg.length === (s.otherSites === true ? 1 : 0);
+      });
+      if (ok) break;
+      if (i > 100) throw new Error('registro do script dos outros sites não estabilizou em 10 s');
+      await page.waitForTimeout(100);
+    }
     await page.close();
   }
 

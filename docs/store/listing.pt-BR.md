@@ -25,7 +25,7 @@ Como funciona
 • Disponível em 55 idiomas, seguindo automaticamente o idioma do navegador.
 
 Privacidade
-A extensão não coleta dados. O tema escolhido fica em chrome.storage.sync (sincroniza pela sua própria conta Google) e não é enviado a nenhum outro lugar. Sem análises, sem anúncios, sem código remoto.
+A extensão não coleta dados. O tema escolhido fica em chrome.storage.sync (sincroniza pela sua própria conta Google) e não é enviado a nenhum outro lugar. Um pequeno cache do último tema fica no armazenamento local do próprio site visitado, para o tema carregar sem piscar. Sem análises, sem anúncios, sem código remoto.
 
 Sem vínculo, aprovação ou patrocínio do Pinterest. Pinterest é marca registrada da Pinterest, Inc.
 

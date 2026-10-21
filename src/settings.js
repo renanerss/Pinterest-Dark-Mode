@@ -51,6 +51,11 @@
     if (Object.keys(clean).length) await chrome.storage.sync.set(clean);
   }
 
+  // Permissão <all_urls> concedida (mesmo com o popup já fechado) => a opção de outros sites liga junto.
+  function permissionPatch(added) {
+    return added && Array.isArray(added.origins) && added.origins.includes('<all_urls>') ? { otherSites: true } : {};
+  }
+
   // Ativar pede a permissão ao usuário (precisa de gesto); desativar devolve a permissão.
   async function setOtherSites(enabled, perms = chrome.permissions) {
     if (enabled) {
@@ -63,7 +68,7 @@
     return false;
   }
 
-  const api = { THEME_IDS, DEFAULTS, normalizeSettings, isPinterestHost, NON_APP_SUBDOMAINS, siteKind, effectiveTheme, reconcileOtherSites, load, save, setOtherSites };
+  const api = { THEME_IDS, DEFAULTS, normalizeSettings, isPinterestHost, NON_APP_SUBDOMAINS, siteKind, effectiveTheme, reconcileOtherSites, permissionPatch, load, save, setOtherSites };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.PTSettings = api;
 })(globalThis);

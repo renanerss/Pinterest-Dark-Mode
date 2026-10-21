@@ -55,3 +55,9 @@ test('SUBMISSION.md lista os passos manuais', () => {
 test('CHANGELOG.md tem a entrada 1.0.0', () => {
   assert.match(read('CHANGELOG.md'), /^## 1\.0\.0/m);
 });
+
+test('privacidade: cache __pt_theme é declarado na política e na listagem', () => {
+  assert.match(read('docs/store/privacy-policy.md'), /__pt_theme/);
+  assert.match(read('docs/store/listing.en.md'), /cache/i);
+  assert.match(read('docs/store/listing.pt-BR.md'), /cache/i);
+});

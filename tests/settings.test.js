@@ -128,3 +128,13 @@ test('siteKind: example.com => "other"', () => {
 test('effectiveTheme: help.pinterest.com com otherSites:false continua devolvendo o tema (domínio Pinterest)', () => {
   assert.equal(S.effectiveTheme({ theme: 'sepia', otherSites: false }, 'help.pinterest.com'), 'sepia');
 });
+
+// ---- permissão concedida enquanto o popup fechou ----
+test('permissionPatch: permissão <all_urls> concedida => {otherSites:true}', () => {
+  assert.deepEqual(S.permissionPatch({ origins: ['<all_urls>'] }), { otherSites: true });
+});
+test('permissionPatch: outras origens ou ausência => {}', () => {
+  assert.deepEqual(S.permissionPatch({ origins: ['https://example.com/*'] }), {});
+  assert.deepEqual(S.permissionPatch({}), {});
+  assert.deepEqual(S.permissionPatch(undefined), {});
+});

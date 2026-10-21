@@ -116,3 +116,20 @@ test('otherSites=false: nova página não recebe data-pt-theme', async () => {
   const page = await open({ theme: 'dark', otherSites: false });
   expect(await page.evaluate(() => document.documentElement.hasAttribute('data-pt-theme'))).toBe(false);
 });
+
+test('registro dinâmico desatualizado é corrigido no próximo sync (inclui pinterest.css)', async () => {
+  await env.setSettings({ theme: 'dark', otherSites: true });
+  const ext = await env.context.newPage();
+  await ext.goto(`chrome-extension://${env.extensionId}/popup/popup.html`);
+  // simula um registro deixado por uma versão anterior da extensão
+  await ext.evaluate(async () => {
+    await chrome.scripting.unregisterContentScripts({ ids: ['pt-other-sites'] });
+    await chrome.scripting.registerContentScripts([{ id: 'pt-other-sites', matches: ['<all_urls>'], js: ['src/settings.js', 'src/content.js'], css: ['css/tokens.css'], runAt: 'document_start', persistAcrossSessions: true }]);
+    await chrome.storage.sync.set({ theme: 'sepia' }); // dispara o sync
+  });
+  await expect.poll(() => ext.evaluate(async () => {
+    const [r] = await chrome.scripting.getRegisteredContentScripts({ ids: ['pt-other-sites'] });
+    return r ? r.css : null;
+  }), { timeout: 10000 }).toEqual(['css/tokens.css', 'css/generic.css', 'css/pinterest.css']);
+  await ext.close();
+});

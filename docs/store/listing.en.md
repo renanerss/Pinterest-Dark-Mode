@@ -25,7 +25,7 @@ How it works
 • Available in 55 languages; it follows your browser's language automatically.
 
 Privacy
-The extension collects no data. Your chosen theme is stored with chrome.storage.sync (it syncs through your own Google account) and never sent anywhere else. No analytics, no ads, no remote code.
+The extension collects no data. Your chosen theme is stored with chrome.storage.sync (it syncs through your own Google account) and never sent anywhere else. A tiny cache of the last theme is kept in the visited site's own local storage so the theme can load without a flash. No analytics, no ads, no remote code.
 
 Not affiliated with, endorsed by or sponsored by Pinterest. Pinterest is a trademark of Pinterest, Inc.
 

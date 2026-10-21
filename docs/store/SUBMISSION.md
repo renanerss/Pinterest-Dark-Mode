@@ -17,6 +17,7 @@ Carregue `dist/extension` em `chrome://extensions` → Modo do desenvolvedor →
 
 - [ ] Pinterest logado, nos 3 temas: feed, pin aberto, boards, perfil, busca, vídeo-pin, modal de salvar. Nada branco ou ilegível; fotos com as cores originais.
 - [ ] Marcar "Aplicar em outros sites": **o Chrome mostra o pedido de permissão**. Negar: a caixa volta desmarcada com a mensagem. Aceitar: abrir uma aba de outro site (após recarregar) e ver o tema.
+- [ ] Marcar "Aplicar em outros sites" e, enquanto o pedido de permissão está aberto, clicar fora (o popup fecha): aceitar o pedido mesmo assim e confirmar que a opção aparece marcada ao reabrir o popup e que o tema vale nas abas novas.
 - [ ] Remover a permissão em `chrome://extensions` → Detalhes → Acesso ao site: ao reabrir o popup a caixa está desmarcada.
 - [ ] Mudar o idioma do Chrome (ou iniciar com `--lang=de`, `--lang=ar`) e conferir o popup (árabe/hebraico/persa espelhados).
 - [ ] Revisar as capturas `screenshot-pinterest-*.png`: elas mostram pins de terceiros e a interface do Pinterest. Troque por capturas suas se preferir.
