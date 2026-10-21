@@ -1,0 +1,9 @@
+{
+  "name": "pinterest-comfort-themes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/settings.test.js",
+    "test:e2e": "playwright test tests/e2e"
+  }
+}
