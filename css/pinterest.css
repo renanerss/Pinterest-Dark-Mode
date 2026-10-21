@@ -1,1 +1,120 @@
-/* Camada do Pinterest: preenchida na Task 4. */
+/* Camada do Pinterest: redefine as variáveis semânticas (--sema-color-*) do design system do site
+   a partir dos tokens --pt-*. Imagens e vídeos dos pins não recebem filtro algum. */
+@media screen {
+  html[data-pt-site="pinterest"]:is([data-pt-theme="dark"], [data-pt-theme="sepia"]) {
+    --pt-surface-2: color-mix(in srgb, var(--pt-surface), var(--pt-mix) 7%);
+    --pt-hover: color-mix(in srgb, var(--pt-bg), var(--pt-mix) 6%);
+    --pt-hover-2: color-mix(in srgb, var(--pt-surface-2), var(--pt-mix) 6%);
+    --pt-pressed: color-mix(in srgb, var(--pt-bg), var(--pt-mix) 11%);
+    --pt-pressed-2: color-mix(in srgb, var(--pt-surface-2), var(--pt-mix) 11%);
+
+    background-color: var(--pt-bg);
+
+    /* superfícies */
+    --sema-color-background-default: var(--pt-bg);
+    --sema-color-background-elevation: var(--pt-bg);
+    --sema-color-background-elevated-opaque-default: var(--pt-bg);
+    --sema-color-background-subtle: var(--pt-surface);
+    --sema-color-background-neutral-weak: var(--pt-surface);
+    --sema-color-background-elevated-opaque-subtle: var(--pt-surface);
+    --sema-color-background-secondary: var(--pt-surface-2);
+    --sema-color-background-elevated-opaque-secondary: var(--pt-surface-2);
+    --sema-color-background-disabled: var(--pt-surface-2);
+    --sema-color-background-tertiary: var(--pt-disabled);
+    --sema-color-background-elevated-opaque-tertiary: var(--pt-disabled);
+    --sema-color-background-inverse: var(--pt-text);
+    --sema-color-background-selected: var(--pt-text);
+    --sema-color-background-info-weak: color-mix(in srgb, var(--pt-bg), var(--pt-link) 20%);
+    --sema-color-background-error-weak: color-mix(in srgb, var(--pt-bg), var(--pt-error) 20%);
+    --sema-color-background-success-weak: color-mix(in srgb, var(--pt-bg), var(--pt-success) 20%);
+    --sema-color-background-warning-weak: color-mix(in srgb, var(--pt-bg), var(--pt-warning) 20%);
+    --sema-color-background-wash-50-default: color-mix(in srgb, var(--pt-bg) 50%, transparent);
+    --sema-color-background-wash-70-default: color-mix(in srgb, var(--pt-bg) 70%, transparent);
+    --sema-color-background-elevated-wash-50-default: color-mix(in srgb, var(--pt-bg) 50%, transparent);
+    --sema-color-background-elevated-wash-60-default: color-mix(in srgb, var(--pt-bg) 60%, transparent);
+    --sema-color-background-elevated-wash-70-default: color-mix(in srgb, var(--pt-bg) 70%, transparent);
+    --sema-color-background-elevated-wash-80-default: color-mix(in srgb, var(--pt-bg) 80%, transparent);
+    --sema-color-background-elevated-wash-90-default: color-mix(in srgb, var(--pt-bg) 90%, transparent);
+    --sema-color-background-elevated-wash-95-default: color-mix(in srgb, var(--pt-bg) 95%, transparent);
+    --sema-color-background-scrims-opaque: color-mix(in srgb, var(--pt-bg) 80%, transparent);
+    --sema-color-background-elevated-scrim-opaque: color-mix(in srgb, var(--pt-bg) 80%, transparent);
+
+    /* hover / pressed */
+    --sema-color-hover-background-default: var(--pt-hover);
+    --sema-color-hover-background-elevation: var(--pt-hover);
+    --sema-color-hover-background-elevated-opaque-default: var(--pt-hover);
+    --sema-color-pressed-background-default: var(--pt-pressed);
+    --sema-color-pressed-background-elevation: var(--pt-pressed);
+    --sema-color-pressed-background-elevated-opaque-default: var(--pt-pressed);
+    --sema-color-hover-background-subtle: var(--pt-hover-2);
+    --sema-color-hover-background-neutral-weak: var(--pt-hover-2);
+    --sema-color-hover-background-elevated-opaque-subtle: var(--pt-hover-2);
+    --sema-color-pressed-background-subtle: var(--pt-pressed-2);
+    --sema-color-pressed-background-neutral-weak: var(--pt-pressed-2);
+    --sema-color-pressed-background-elevated-opaque-subtle: var(--pt-pressed-2);
+    --sema-color-hover-background-secondary: var(--pt-hover-2);
+    --sema-color-hover-background-elevated-opaque-secondary: var(--pt-hover-2);
+    --sema-color-pressed-background-secondary: var(--pt-pressed-2);
+    --sema-color-pressed-background-elevated-opaque-secondary: var(--pt-pressed-2);
+    --sema-color-hover-background-inverse: color-mix(in srgb, var(--pt-text), var(--pt-bg) 10%);
+    --sema-color-hover-background-selected: color-mix(in srgb, var(--pt-text), var(--pt-bg) 10%);
+    --sema-color-pressed-background-inverse: color-mix(in srgb, var(--pt-text), var(--pt-bg) 20%);
+    --sema-color-pressed-background-selected: color-mix(in srgb, var(--pt-text), var(--pt-bg) 20%);
+
+    /* texto */
+    --sema-color-text-default: var(--pt-text);
+    --sema-color-hover-text-default: var(--pt-text);
+    --sema-color-pressed-text-default: var(--pt-text);
+    --sema-color-text-subtle: var(--pt-muted);
+    --sema-color-text-neutral: var(--pt-muted);
+    --sema-color-hover-text-subtle: var(--pt-muted);
+    --sema-color-pressed-text-subtle: var(--pt-muted);
+    --sema-color-hover-text-neutral: var(--pt-muted);
+    --sema-color-pressed-text-neutral: var(--pt-muted);
+    --sema-color-text-disabled: var(--pt-disabled);
+    --sema-color-text-inverse: var(--pt-bg);
+    --sema-color-hover-text-inverse: var(--pt-bg);
+    --sema-color-pressed-text-inverse: var(--pt-bg);
+    --sema-color-text-link: var(--pt-link);
+    --sema-color-text-info: var(--pt-link);
+    --sema-color-hover-text-link: var(--pt-link);
+    --sema-color-pressed-text-link: var(--pt-link);
+    --sema-color-text-error: var(--pt-error);
+    --sema-color-text-success: var(--pt-success);
+    --sema-color-text-warning: var(--pt-warning);
+    --sema-color-text-primary: var(--pt-accent-text);
+
+    /* ícones */
+    --sema-color-icon-default: var(--pt-text);
+    --sema-color-hover-icon-default: var(--pt-text);
+    --sema-color-pressed-icon-default: var(--pt-text);
+    --sema-color-icon-subtle: var(--pt-muted);
+    --sema-color-icon-neutral: var(--pt-muted);
+    --sema-color-hover-icon-subtle: var(--pt-muted);
+    --sema-color-pressed-icon-subtle: var(--pt-muted);
+    --sema-color-hover-icon-neutral: var(--pt-muted);
+    --sema-color-pressed-icon-neutral: var(--pt-muted);
+    --sema-color-icon-disabled: var(--pt-disabled);
+    --sema-color-icon-inverse: var(--pt-bg);
+    --sema-color-hover-icon-inverse: var(--pt-bg);
+    --sema-color-pressed-icon-inverse: var(--pt-bg);
+    --sema-color-icon-link: var(--pt-link);
+    --sema-color-icon-info: var(--pt-link);
+    --sema-color-icon-error: var(--pt-error);
+    --sema-color-icon-success: var(--pt-success);
+    --sema-color-icon-warning: var(--pt-warning);
+
+    /* bordas */
+    --sema-color-border-decorative: var(--pt-border);
+    --sema-color-border-disabled: var(--pt-border);
+    --sema-color-hover-border-decorative: color-mix(in srgb, var(--pt-border), var(--pt-mix) 8%);
+    --sema-color-pressed-border-decorative: color-mix(in srgb, var(--pt-border), var(--pt-mix) 14%);
+    --sema-color-border-interactive: var(--pt-disabled);
+    --sema-color-hover-border-interactive: var(--pt-muted);
+    --sema-color-pressed-border-interactive: var(--pt-muted);
+    --sema-color-border-inverse: var(--pt-bg);
+    --sema-color-border-selected: var(--pt-text);
+    --sema-color-border-error: var(--pt-error);
+    --sema-color-border-success: var(--pt-success);
+  }
+}
